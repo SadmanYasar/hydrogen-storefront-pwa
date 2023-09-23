@@ -1,6 +1,6 @@
-# Hydrogen template: Skeleton
+# Hydrogen PWA
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **minimal setup** of components, queries and tooling to get started with Hydrogen.
+Implementation of Hydrogen with Remix PWA v3.
 
 [Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
 [Get familiar with Remix](https://remix.run/docs/en/v1)
@@ -8,6 +8,7 @@ Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dov
 ## What's included
 
 - Remix
+- Remix PWA v3
 - Hydrogen
 - Oxygen
 - Shopify CLI
@@ -38,3 +39,7 @@ npm run build
 ```bash
 npm run dev
 ```
+
+## Note
+- Currenty facing a bug with Remix PWA v3, added an issue.
+- Once fixed, will try to turn this into a universal app with React Native Webview.
