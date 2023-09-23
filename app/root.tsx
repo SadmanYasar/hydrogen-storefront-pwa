@@ -5,7 +5,6 @@ import {
   Meta,
   Outlet,
   Scripts,
-  LiveReload,
   useMatches,
   useRouteError,
   useLoaderData,
@@ -20,6 +19,7 @@ import resetStyles from './styles/reset.css';
 import appStyles from './styles/app.css';
 import {Layout} from '~/components/Layout';
 import tailwindCss from './styles/tailwind.css';
+import {LiveReload, useSWEffect} from '@remix-pwa/sw';
 
 // This is important to avoid re-fetching root queries on sub-navigations
 export const shouldRevalidate: ShouldRevalidateFunction = ({
@@ -100,6 +100,7 @@ export async function loader({context}: LoaderArgs) {
 }
 
 export default function App() {
+  useSWEffect();
   const nonce = useNonce();
   const data = useLoaderData<typeof loader>();
 
